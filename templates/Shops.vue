@@ -39,7 +39,7 @@
                   "
                 >
                 </v-card-text> -->
-                <div>説明</div>
+                <div>商品誘導説明</div>
               </div>
               <!-- <v-data-table
                 :headers="headersSns"
@@ -78,7 +78,7 @@
                   "
                 >
                 </v-card-text> -->
-                <div>説明</div>
+                <div>商品誘導説明</div>
               </div>
               <!-- <v-data-table
                 :headers="headersPic"

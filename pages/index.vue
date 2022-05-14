@@ -3,6 +3,7 @@
     <Hero />
     <Shops />
     <Aboutme />
+    <Information />
   </div>
 </template>
 <script lang="ts">

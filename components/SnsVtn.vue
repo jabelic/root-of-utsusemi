@@ -1,6 +1,13 @@
 <template>
   <div class="my-3">
-    <v-btn color="grey" :href="snsLinks[keyStr]" outlined large target="_blank">
+    <v-btn
+      color="grey"
+      :href="snsLinks[keyStr]"
+      outlined
+      large
+      target="_blank"
+      class="none-text-trans hov"
+    >
       <span class="grey--text text--darken-1 font-weight-bold">
         {{ keyStr }}
       </span>
@@ -20,4 +27,11 @@ export default defineComponent({
   },
 })
 </script>
-<style scoped></style>
+<style scoped>
+.none-text-trans {
+  text-transform: none !important;
+}
+.hov:hover {
+  background-color: rgba(100, 100, 230, 0.3);
+}
+</style>

@@ -1,7 +1,5 @@
 <template>
-  <section id="about-me">
-    <div class="py-6"></div>
-
+  <section id="about-me" class="mt-10">
     <v-container class="text-center">
       <h2 class="display-1 font-weight-bold mb-3">Artist</h2>
 
@@ -24,9 +22,11 @@
         max-width="360"
         >{{ ARTIST }}</v-responsive
       >
-      <SnsVtn :keyStr="'Pixiv'" />
-      <SnsVtn :keyStr="'Twitter'" />
-      <SnsVtn :keyStr="'SKIMA'" />
+      <div class="d-flex justify-center">
+        <SnsVtn :keyStr="'Pixiv'" class="ma-3" />
+        <SnsVtn :keyStr="'Twitter'" class="ma-3" />
+        <SnsVtn :keyStr="'SKIMA'" class="ma-3" />
+      </div>
     </v-container>
 
     <div class="py-12"></div>

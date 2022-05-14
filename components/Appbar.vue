@@ -17,8 +17,9 @@
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" fixed temporary>
-      <v-list dense nav>
+      <v-list nav>
         <v-list-item
+          class="my-2"
           v-for="item in items"
           :key="item.title"
           :href="item.scroll"
