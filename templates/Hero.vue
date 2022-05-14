@@ -29,7 +29,7 @@
                   class="align-self-end"
                   fab
                   outlined
-                  @click="$vuetify.goTo('#about-me')"
+                  @click="$vuetify.goTo('#Shops')"
                 >
                   <v-icon>mdi-chevron-double-down</v-icon>
                 </v-btn>

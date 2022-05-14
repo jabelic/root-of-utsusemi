@@ -43,7 +43,7 @@ export default defineComponent({
   setup() {
     const items = ref([
       { title: 'Home', icon: 'mdi-view-dashboard', scroll: '/#hero' },
-      { title: 'Menu', icon: 'mdi-cart-outline', scroll: '#menu' },
+      { title: 'Shops', icon: 'mdi-cart-outline', scroll: '#Shops' },
       { title: 'About me', icon: 'mdi-image', scroll: '#about-me' },
       // {
       //   title: 'Caution',

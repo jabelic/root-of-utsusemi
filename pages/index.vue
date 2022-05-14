@@ -1,17 +1,17 @@
 <template>
   <div>
     <Hero />
-    <Menu />
+    <Shops />
     <Aboutme />
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import Menu from '~/templates/Menu.vue'
+import Shops from '~/templates/Shops.vue'
 
 export default defineComponent({
   setup() {},
-  components: { Menu },
+  components: { Shops },
 })
 </script>
 <style scoped></style>

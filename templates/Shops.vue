@@ -1,6 +1,6 @@
 <template>
-  <div id="top-menu">
-    <section id="menu" class="grey lighten-3">
+  <div id="top-Shops">
+    <section id="Shops" class="grey lighten-3">
       <div class="py-5"></div>
 
       <v-container class="text-center">
@@ -99,7 +99,7 @@
 <script>
 import { defineComponent, reactive, ref } from '@nuxtjs/composition-api'
 export default defineComponent({
-  name: 'Menu',
+  name: 'Shops',
   setup() {
     const headersSns = reactive([
       {
