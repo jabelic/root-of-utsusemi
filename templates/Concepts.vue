@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section id="Shops" class="grey lighten-3 text">
+  <div id="Concepts">
+    <section class="grey lighten-3 text">
       <v-container>
         <div class="d-flex flex-column justify-center">
           <div class="d-flex flex-row justify-center">
