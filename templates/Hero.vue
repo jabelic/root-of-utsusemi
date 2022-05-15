@@ -14,25 +14,27 @@
                 tag="h1"
               >
                 <p class="title-background">
-                  <span style="font-weight: bold" class="">
+                  <span style="font-weight: bold" class="text">
                     {{ SUB_TITLE }}
                   </span>
                   <br />
 
-                  <span class="" style="font-weight: bold; font-size: 70px">
+                  <span class="text" style="font-weight: bold; font-size: 70px">
                     {{ TITLE }}
                   </span>
                 </p>
               </v-col>
               <v-col>
-                <v-btn
-                  class="align-self-end"
-                  fab
-                  outlined
-                  @click="$vuetify.goTo('#Shops')"
-                >
-                  <v-icon>mdi-chevron-double-down</v-icon>
-                </v-btn>
+                <div class="d-flex justify-center">
+                  <v-btn
+                    class="align-self-end"
+                    fab
+                    outlined
+                    @click="$vuetify.goTo('#Shops')"
+                  >
+                    <v-icon>mdi-chevron-double-down</v-icon>
+                  </v-btn>
+                </div>
               </v-col>
             </v-row>
           </v-container>
@@ -50,15 +52,14 @@ export default defineComponent({
   },
 })
 </script>
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
-#app {
+.text {
   /* Google fontsで導入したいfontsからfont-familyを取ってくる */
   font-family: 'Noto Serif JP', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 .title-background {
   background: rgba(100, 100, 230, 0.5);

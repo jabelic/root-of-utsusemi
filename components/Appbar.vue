@@ -63,3 +63,9 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+.text {
+  font-family: 'Noto Serif JP', cursive;
+}
+</style>
