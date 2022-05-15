@@ -5,13 +5,7 @@
 
       <v-container class="text-center">
         <h2 class="display-1 font-weight-bold mb-3">Shops</h2>
-
-        <v-responsive class="mx-auto mb-12" width="46">
-          <v-divider class="mb-1"></v-divider>
-
-          <v-divider></v-divider>
-        </v-responsive>
-
+        <Divider />
         <v-row>
           <v-col cols="12" md="6">
             <ShopsCard
@@ -20,44 +14,11 @@
               icon="mdi-account-box-outline"
           /></v-col>
           <v-col cols="12" md="6">
-            <v-card class="py-12 px-4" color="grey lighten-5" flat>
-              <v-theme-provider dark>
-                <div>
-                  <v-avatar color="primary" size="88">
-                    <v-icon
-                      large
-                      v-text="'mdi-picture-in-picture-bottom-right'"
-                    ></v-icon>
-                  </v-avatar>
-                </div>
-              </v-theme-provider>
-              <!-- v-text="'一枚絵'" -->
-              <v-card-title
-                class="justify-center font-weight-black text-uppercase"
-              >
-                コンポーネント販売
-              </v-card-title>
-              <div class="haikei">
-                <!-- v-text="'使用許諾：7000円〜\n著作権譲渡：17000円〜'" -->
-                <!-- <v-card-text
-                  style="
-                    white-space: pre-wrap;
-                    font-size: 17px;
-                    font-weight: 600;
-                  "
-                >
-                </v-card-text> -->
-                <div>商品誘導説明</div>
-              </div>
-              <!-- <v-data-table
-                :headers="headersPic"
-                :items="dessertsPic"
-                hide-default-header
-                hide-default-footer
-                class="elevation-1"
-              ></v-data-table> -->
-            </v-card>
-          </v-col>
+            <ShopsCard
+              title="コンポーネント販売"
+              description="商品誘導説明"
+              icon="mdi-account-box-outline"
+          /></v-col>
         </v-row>
       </v-container>
 
@@ -66,7 +27,7 @@
   </div>
 </template>
 <script>
-import { defineComponent, reactive, ref } from '@nuxtjs/composition-api'
+import { defineComponent, reactive } from '@nuxtjs/composition-api'
 export default defineComponent({
   name: 'Shops',
   setup() {

@@ -23,7 +23,7 @@
                   "
                 >
                 </v-card-text> -->
-        <div>商品誘導説明</div>
+        <div>{{ description }}</div>
       </div>
       <!-- <v-data-table
                 :headers="headersSns"

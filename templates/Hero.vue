@@ -42,8 +42,8 @@
   </section>
 </template>
 <script>
-import { TITLE, SUB_TITLE } from '@/locale/const'
 import { defineComponent } from '@nuxtjs/composition-api'
+import { TITLE, SUB_TITLE } from '@/locale/const'
 export default defineComponent({
   setup() {
     return { TITLE, SUB_TITLE }

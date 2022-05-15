@@ -1,19 +1,18 @@
 <template>
   <div>
-    <Hero />
-    <Concepts />
-    <Shops />
-    <Aboutme />
-    <Information />
+    <section id="Shops" class="grey lighten-3">
+      <v-container>
+        <h2 class="display-1 font-weight-bold mb-3">Artist</h2>
+        <Divider />
+      </v-container>
+    </section>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import Shops from '~/templates/Shops.vue'
 
 export default defineComponent({
   setup() {},
-  components: { Shops },
 })
 </script>
 <style scoped></style>

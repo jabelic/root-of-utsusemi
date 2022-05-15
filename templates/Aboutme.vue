@@ -2,12 +2,7 @@
   <section id="about-me" class="mt-10">
     <v-container class="text-center">
       <h2 class="display-1 font-weight-bold mb-3">Artist</h2>
-
-      <v-responsive class="mx-auto mb-8" width="56">
-        <v-divider class="mb-1"></v-divider>
-        <v-divider class="mb-1"></v-divider>
-      </v-responsive>
-
+      <Divider />
       <div class="mx-auto subtitle font-weight-light mb-8">
         {{ ABOUTUS }}
       </div>
