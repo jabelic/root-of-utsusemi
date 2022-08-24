@@ -8,9 +8,9 @@
       target="_blank"
       class="none-text-trans hov"
     >
-    <img v-if="keyStr==='Pixiv'" :src="pixiv" alt="" class="icon-img">
-    <img v-else-if="keyStr==='Twitter'" :src="twitter" alt="" class="icon-img">
-    <img v-else :src="skima" alt="" class="icon-img">
+    <img v-if="keyStr==='Pixiv'" :src="Pixiv" alt="" class="icon-img">
+    <img v-else-if="keyStr==='Twitter'" :src="Twitter" alt="" class="icon-img">
+    <img v-else :src="SKIMA" alt="" class="icon-img">
       <span class="grey--text text--darken-1 font-weight-bold">
         {{ keyStr }}
       </span>
@@ -20,9 +20,6 @@
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
 import { snsLinks } from '../locale/links'
-import twitter from '@/assets/twitter.svg'
-import pixiv from '@/assets/pixiv-logos.svg'
-import skima from '@/assets/skima-logo.svg'
 import { SnsKind } from '~/types/custom'
 
 export default defineComponent({
@@ -31,7 +28,10 @@ export default defineComponent({
     keyStr: { type: String as PropType<SnsKind>, required: true },
   },
   setup() {
-    return { snsLinks, twitter, pixiv, skima }
+    const Pixiv = '@/assets/pixiv-logos.svg'
+    const Twitter = '@/assets/twitter.svg'
+    const SKIMA = '@/assets/skima-logo.svg'
+    return { snsLinks, Twitter, Pixiv, SKIMA }
   },
 })
 </script>
