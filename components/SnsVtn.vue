@@ -8,9 +8,9 @@
       target="_blank"
       class="none-text-trans hov"
     >
-    <img v-if="keyStr==='Pixiv'" :src="Pixiv" alt="" class="icon-img">
-    <img v-else-if="keyStr==='Twitter'" :src="Twitter" alt="" class="icon-img">
-    <img v-else :src="SKIMA" alt="" class="icon-img">
+    <img v-if="keyStr==='Pixiv'" :src="'@/assets/pixiv-logos.svg'" alt="" class="icon-img">
+    <img v-else-if="keyStr==='Twitter'" :src="'@/assets/twitter.svg'" alt="" class="icon-img">
+    <img v-else :src="'@/assets/skima-logo.svg'" alt="" class="icon-img">
       <span class="grey--text text--darken-1 font-weight-bold">
         {{ keyStr }}
       </span>
@@ -28,10 +28,7 @@ export default defineComponent({
     keyStr: { type: String as PropType<SnsKind>, required: true },
   },
   setup() {
-    const Pixiv = '@/assets/pixiv-logos.svg'
-    const Twitter = '@/assets/twitter.svg'
-    const SKIMA = '@/assets/skima-logo.svg'
-    return { snsLinks, Twitter, Pixiv, SKIMA }
+    return { snsLinks}
   },
 })
 </script>
