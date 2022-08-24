@@ -1,5 +1,7 @@
 # portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3171702b-5d23-4474-b4d3-feb3dd741fb5/deploy-status)](https://app.netlify.com/sites/utsusemi-kaiga-ko-bo/deploys)
+
 ## Build Setup
 
 ```bash
