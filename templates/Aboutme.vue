@@ -18,9 +18,9 @@
         >{{ ARTIST }}</v-responsive
       >
       <div class="d-flex justify-center">
-        <SnsVtn :keyStr="'Pixiv'" class="ma-3" />
-        <SnsVtn :keyStr="'Twitter'" class="ma-3" />
-        <SnsVtn :keyStr="'SKIMA'" class="ma-3" />
+        <span v-for="item in SNS">
+          <SnsVtn :keyStr="item" class="ma-3" />
+        </span>
       </div>
     </v-container>
 
@@ -33,11 +33,13 @@ import { defineComponent } from '@nuxtjs/composition-api'
 import { ABOUTUS, ARTIST } from '../locale/const'
 import { snsLinks } from '../locale/links'
 import SnsVtn from '../components/SnsVtn.vue'
+import { SnsKind } from '~/types/custom'
 
 export default defineComponent({
   name: 'Aboutme',
   setup() {
-    return { snsLinks, ARTIST, ABOUTUS }
+    const SNS: SnsKind[] = ['Pixiv','Twitter', 'SKIMA']
+    return { snsLinks, ARTIST, ABOUTUS, SNS }
   },
   components: { SnsVtn },
 })

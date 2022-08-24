@@ -1,0 +1,1 @@
+export type SnsKind = 'Twitter' | 'Pixiv' | 'SKIMA'
