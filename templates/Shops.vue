@@ -7,18 +7,18 @@
         <Divider />
       </v-container>
       <div class="service">
-        <img :src="seaGril" alt="">
+        <img :src="seaGril" alt="" />
       </div>
       <div class="service-color d-flex justify-end align-center">
         <a :href="service1" target="_blank">
-        <div class="title-card">
-          <div class="title-in-card">
-            {{ titleCard.title }}
+          <div class="title-card">
+            <div class="title-in-card">
+              {{ titleCard.title }}
+            </div>
+            <div class="subtitle-in-card">
+              {{ titleCard.subtitle }}
+            </div>
           </div>
-          <div class="subtitle-in-card">
-            {{ titleCard.subtitle }}
-          </div>
-        </div>
         </a>
       </div>
 
@@ -93,11 +93,19 @@ export default defineComponent({
       },
     ])
     const titleCard = {
-      'title': 'サービス名',
-      'subtitle': '南條なぎがお届けする様々なWeb画をお買い求め頂けます。'
+      title: 'サービス名',
+      subtitle: '南條なぎがお届けする様々なWeb画をお買い求め頂けます。',
     }
-    const service1 = new URL("https://spontaneous-macaron-b00c3e.netlify.app/").href
-    return { dessertsPic, dessertsSns, headersPic, headersSns,seaGril, titleCard, service1 }
+    const service1 = new URL('https://one-picture.netlify.app/').href
+    return {
+      dessertsPic,
+      dessertsSns,
+      headersPic,
+      headersSns,
+      seaGril,
+      titleCard,
+      service1,
+    }
   },
 })
 </script>
@@ -105,52 +113,60 @@ export default defineComponent({
 .haikei {
   background: rgba(240, 192, 5, 0.25);
 }
-.service{
+.service {
   width: 100%;
   height: 20vh;
-  background: linear-gradient(to right, rgba(0,0,0,0), rgba(245,233,222) 90%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(245, 233, 222) 90%
+  );
   position: relative;
 }
 
-.service >>> img{
+.service >>> img {
   object-fit: cover;
   width: 50%;
   height: 20vh;
   position: relative;
   z-index: 1;
 }
-.service-color{
+.service-color {
   width: 100%;
   height: 20vh;
-  background: linear-gradient(to right, rgba(0,0,0,0), rgba(245,233,222) 90%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(245, 233, 222) 90%
+  );
   margin-top: -20vh;
   position: relative;
   z-index: 3;
 }
-.service-color >>> a{
+.service-color >>> a {
   text-decoration: none;
   color: black;
 }
-.service-color >>> a:hover{
-  text-decoration:underline;
+.service-color >>> a:hover {
+  text-decoration: underline;
   transition-duration: 300ms;
 }
 
-.title-card{
+.title-card {
   background: rgba(217, 217, 217, 0.2);
   width: 50vw;
   height: 50%;
 }
-.title-card:hover{
+.title-card:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition-duration: 300ms;
 }
-.title-in-card{
+.title-in-card {
   font-size: 1.5rem;
   padding-left: 20px;
   padding-top: 10px;
 }
-.subtitle-in-card{
+.subtitle-in-card {
   font-size: 0.95rem;
   padding-left: 20px;
   padding-bottom: 10px;
