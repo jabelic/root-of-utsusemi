@@ -110,9 +110,6 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-.haikei {
-  background: rgba(240, 192, 5, 0.25);
-}
 .service {
   width: 100%;
   height: 20vh;
